@@ -23,15 +23,19 @@ pip install -r requirements.txt
 
 ## 📦 Dependencies
 
-- tensorflow >= 2.0
-- streamlit
-- numpy
-- pandas
-- pillow
+- yfinance
+- langchain_pinecone
+- groq
+- matplotlib
 - plotly
-- opencv-python
-- google-generativeai
 - python-dotenv
+- langchain-community
+- sentence_transformers
+- streamlit
+- pyngrok
+- python-dotenv
+- newsapi-python
+- ta
 
 ## 🚀 Usage
 
