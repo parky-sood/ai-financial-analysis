@@ -4,7 +4,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
 [![HuggingFace](https://img.shields.io/badge/-HuggingFace-FDEE21?style=for-the-badge&logo=HuggingFace&logoColor=black)](https://huggingface.co/)
 
-Index the New York Stock Exchange (NYSE) by company ticker, characteristics, or name and receive detailed analysis about them and similar companies. Some details include price changes in the 1 year, market cap, industry and sector, and analyst recommendation on buying/selling/holding the stock.
+Index the New York Stock Exchange (NYSE) by company ticker, characteristics, or name and receive detailed analysis and key market insights about them and similar companies.
 
 ## 🎯 Project Overview
 
