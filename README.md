@@ -16,7 +16,7 @@ See `Stock_Insider_DB.ipynb` for source code.
 ### Part 2: Streamlit App Development
 When the user queries by sector, business summary, or ticker, a Llama 3.1 LLM is used to enhance the user query to be more usable for searching Pinecone vectors, find the top five most similar companies stored in Pinecone based on cosine similarity, and retrieve them. Further details on these companies are found through the Yahoo Finance API, which provides information about the market cap, industry, sector, analyst recommendations about investing in the company stock, and the past 1 year of stock price history for each company. Another Llama 3.1 LLM is used alongside Prompt Engineering to provide a deep analysis on the stocks using the retrieved information as context. The News API is then used to find internet articles about these companies, and provide further information on the relevant stock market sector.
 
-See `Stock_Insider_App.ipynb` for source code.
+See `Stock_Insider_App.ipynb` or `app.py` for source code.
 
 ## 🛠️ Installation
 
