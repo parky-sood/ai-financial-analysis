@@ -45,7 +45,7 @@ Run
 ```bash
 streamlit run app.py
 ```
-to run locally, or access the hosted application ![here](https://market-insider.streamlit.app/).
+to run locally, or access the hosted application [here](https://market-insider.streamlit.app/).
 
 ## 🖥️ Web Interface Features
 
