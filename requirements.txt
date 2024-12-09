@@ -1,0 +1,13 @@
+yfinance
+langchain_pinecone
+groq
+matplotlib
+plotly
+python-dotenv
+langchain-community
+sentence_transformers
+streamlit
+pyngrok
+python-dotenv
+newsapi-python
+ta
