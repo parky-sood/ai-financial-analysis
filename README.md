@@ -11,7 +11,7 @@ Index the New York Stock Exchange (NYSE) by company ticker, characteristics, or 
 ### Part 1: Preprocessing NYSE Company Tickers
 This project uses a Pinecone database to store an embedding of the company's business summary and index the database by ticker. The Hugging Face `all-mpnet-base-v2` model is used to transform the business summary into a vector embedding. There are 9998 companies on the NYSE. To populate the Pinecone rapidly, a multithreading approach was used to process multiple company tickers and business summaries concurrently. The number of threads in Google Colab were limited to 10 to continue using the free tier resources and preventing API request timeouts from Yahoo Finance for too many requests per minute.
 
-See `Stock-Insider-DB.ipynb` for source code.
+See `Stock_Insider_DB.ipynb` for source code.
 
 ### Part 2: Streamlit App Development
 When the user queries by sector, business summary, or ticker, a Llama 3.1 LLM is used to enhance the user query to be more usable for searching Pinecone vectors, find the top five most similar companies stored in Pinecone based on cosine similarity, and retrieve them. Further details on these companies are found through the Yahoo Finance API, which provides information about the market cap, industry, sector, analyst recommendations about investing in the company stock, and the past 1 year of stock price history for each company. Another Llama 3.1 LLM is used alongside Prompt Engineering to provide a deep analysis on the stocks using the retrieved information as context. The News API is then used to find internet articles about these companies, and provide further information on the relevant stock market sector.
