@@ -184,14 +184,15 @@ if st.button("🔍 Find Stocks", type="primary"):
         hist_data = stock.history(period="1y")
 
         # Normalize the prices to percentage change
-        hist_data['Normalized'] = (hist_data['Close'] / hist_data['Close'].iloc[0] - 1) * 100
+        if not hist_data.empty:
+          hist_data['Normalized'] = (hist_data['Close'] / hist_data['Close'].iloc[0] - 1) * 100
 
-        fig.add_trace(go.Scatter(
-          x=hist_data.index,
-          y=hist_data['Normalized'],
-          name=f"{ticker}",
-          mode='lines'
-        ))
+          fig.add_trace(go.Scatter(
+            x=hist_data.index,
+            y=hist_data['Normalized'],
+            name=f"{ticker}",
+            mode='lines'
+          ))
 
       fig.update_layout(
           title="1-Year Price Performance Comparison (%)",
